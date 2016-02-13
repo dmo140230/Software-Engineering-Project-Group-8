@@ -1,0 +1,113 @@
+
+
+
+
+
+
+
+Requirements
+Design and Build a Customer Training System – Part II
+Group 8
+David Orozco, Kesha Shrestha, Dustin Endres, Luis Segarra, Razia Saleen,
+SE 4485 Software Engineering Project
+2/12/16
+ 
+Abstract
+This requirements document contains the use case model for the functional requirements, including a graphical use case diagram that details the objects in the system and how they are related to one another, and the textual description of the use cases
+
+The textual descriptions of the use cases contain the name of the use case, the participating actors, the entry conditions, the normal flow of events, subflows, exit conditions, and any alternate flows of events. 
+
+It also contains the rationale to the use case model, which explains why the use case model works and how it was devised, and the nonfunctional requirements listed in a table.
+ 
+Table of Contents
+Introduction	3
+List of Figures	3
+List of Tables	3
+Use Case Model	4
+Use Case Diagram	4
+Use Case 1: Support Page	4
+Use Case 2: Enter Password	5
+Use Case 3: Diagnostic Checklist	5
+Use Case 4: Display Videos	6
+Rationale for the Use Case Model	6
+Non Functional Requirements	7
+Configuration Management	8
+References	8
+
+List of Figures:
+1.	Use Case Diagram
+List of Tables: 
+1.	Non Functional Requirements
+Introduction
+This is the requirements specification for the Design and Build a Customer Training System – Part II project. This document will detail the use cases that capture the requirements given to us by the DMHE owner and project sponsor. After this introduction, this document will have a use case diagram, followed by a textual description of each use case, as well as the rationale for that use case model. After that, the document will list the nonfunctional requirements, and the configuration management information.
+ 
+Use Case Model for Functional Requirements
+ 
+Figure 1. Use Case Diagram
+Use Case 1: Support Page
+1.1 Preconditions:
+The customer must be aware of the support page and the customer must also have a valid login for the support page.
+1.2 Main Flow:
+The customer opens the DMHE main page, navigates to the support section and logs in with valid credentials.
+1.3 Subflows:
+The customer opens their web browser and enters the DMHE web address in the address bars.
+Once on the page the customer locates the support link on the home page and is redirected.
+After loading the support page the customer inputs their credentials into the correct fields on the page and logs in.
+1.4 Alternative Flows:
+The customer opens the DMHE main page, navigates to the support section and is denied access to the support page due to invalid credentials.
+
+Use Case 2: Enter Password
+Participating Actors: Customer
+3.1 Entry Conditions:
+The customer has navigated to the DMHE support website
+3.2 Normal Flow:
+The system prompts the customer for their username and password. These credentials will be given to them by the DMHE. When they enter their username and password, the system will check if the information they entered is valid according to the information present in the DMHE database. If it is, the customer is then taken to the diagnostic checklist page. 
+3.3 Alternative Flows:
+The customer entered the username and password wrong, so an error is displayed, asking them to please enter the correct username or password.
+3.4 Exit Conditions
+The customer will have determine the cause of their problem and are then sent to a page that has the video pertaining to their problem
+
+Use Case 3: Diagnostic Checklist
+Participating Actors: Customer
+3.1 Entry Conditions:
+The customer has logged in to the website and the customer is able to view the diagnostic checklist
+3.2 Normal Flow:
+The customer follows the diagnostic checklist by answering the questions that are displayed and identifies the issues with device
+3.3 Subflows:
+As the customer goes down the list, the device can be tested as they go along for each to see where the issue occurs.
+3.4 Alternative Flows:
+The customer may choose to jump directly to the the solution for their problem, instead of going through the checklist, if they are more likely to know about the router and the system. They may also choose the option for more help if they issue is still not resolved.
+3.5 Exit Conditions
+The customer will have determine the cause of their problem and are then sent to a page that has the video pertaining to their problem
+Use Case 4: Display Videos
+Participating Actors: Customer, DMHE employee
+4.1 Entry Conditions: 
+The customer have logged in to the website and the customer has discovered the problem through the use of the diagnostic checklist
+4.2 Normal Flow: 
+The customer follows the steps displayed in the video along with the textual instructions that accompany it in order to solve their problem. They may repeat the video if they missed some steps in solving their problem if needed.
+4.3 Subflows: 
+The customer might have to pause and resume the video in between in finding buttons to restart or following other instruction for their issue.
+4.4 Alternative Flows: 
+The customer may choose to use the checklist for the solution for their problem, instead of watching the video, if they are more likely to know about the router and the system. They may also choose the option for more help if they issue is still not resolved.
+4.5 Exit Conditions
+At this point, the customer has resolved the issue and they exit the system, or the customer is still unable to fix the problem themselves, so the phone number to call the DMHE 
+Rationale For the Use Case Model
+This use case model is similar to the existing troubleshooting process the DMHE already has in place, except that instead of having a human phone operator perform the diagnostic, and instead of having to send a technician out to the home and fix it, the system allows the customers themselves to find the root cause of the problem by following a checklist, and then fixing the problem themselves by learning from a video instead of waiting on a tech.
+
+
+Non Functional Requirements
+
+NFR	Description
+NFR_1	The system shall follow the C.I.A principles of security
+NFR_2	The training system shall be available at all time for the customer to use
+NFR_3	The system shall have the option to add more content in the future. (Maintainability)
+NFR_4	The training system shall be usable by the DMHE employees
+NFR_5	The training system shall be usable by the DMHE customers without additional instruction
+
+
+Evidence the Requirements Have Been Placed Under Configuration Management
+
+
+
+
+
