@@ -20,16 +20,15 @@ Table of Contents
 Introduction	3
 List of Figures	3
 List of Tables	3
-Use Case Model	4
-Use Case Diagram	4
-Use Case 1: Support Page	4
-Use Case 2: Enter Password	5
-Use Case 3: Diagnostic Checklist	5
-Use Case 4: Display Videos	6
-Rationale for the Use Case Model	6
-Non Functional Requirements	7
-Configuration Management	8
-References	8
+Architectural Styles Used	3
+Architectural Models Used	5
+Support Subsystem	6
+Authentication Layer	6
+Diagnostics Layer	6
+Video Layer	6
+Technology, Software, and Hardware Used	7
+Configuration Management	7
+References	7
 
 List of Figures:
 1.	Strictly Layered Architecture Model
@@ -52,6 +51,9 @@ The layered architecture has four layers which is sub-divided into two or more s
 
 4) Video Layer: In this layer, the unlisted YouTube links are managed and are used as references for the diagnosis process.
 
+
+
+
 Architectural Model Used
 The model consists of 4 layers each divided into two or more subsystems.
  
@@ -70,14 +72,13 @@ Diagnostics System – This system will ask the user a series of question to car
 Video Layer:
 YouTube Link System– This system will manage all of the Youtube links and their associations to the Diagnostics layer and its respective subsystems.
 YouTube Video System – This system will allow for the management of the videos to be used as references in the diagnosis process. 
+ 
 Technology, Software, and Hardware Used
 The technology needed to implement this project includes an ide, cameras, YouTube, and the existing DMHE website.  The cameras will be used to record the necessary videos that will aid DM customers in troubleshooting.  The cameras will also be used to take pictures of the supported hardware to help customers identify their pieces of hardware.  The IDE will need to be able to create html webpages.  A tool such as eclipse with an html plug in can be used to create html based web pages, the page that will be created will use the existing framework of the DMHE website.  YouTube is being used to host the related videos.  The videos will be unlisted so no unauthorized person will be able to search for them. 
 
 This project uses the existing client server framework that is currently in place for the DMHE website but will slightly be modified to accept a login after connecting to the support portal.  Clients will connect to the DMHE website click on the support page, then input their credentials.  After users are authenticated they will have access to the diagnostic page and be able to view the support videos being streams through YouTube. 
 Evidence the Requirements Have Been Placed Under Configuration Management
-YouTube.
+https://github.com/dmo140230/Software-Engineering-Project-Group-8/blob/master/Architecture.txt
 References
-
-
-
+N/A
 
