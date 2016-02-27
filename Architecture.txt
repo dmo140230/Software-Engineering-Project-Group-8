@@ -1,0 +1,83 @@
+
+
+
+
+
+
+
+Architecture
+Design and Build a Customer Training System – Part II
+Group 8
+David Orozco, Kesha Shrestha, Dustin Endres, Luis Segarra, Razia Saleen,
+SE 4485 Software Engineering Project
+2/26/16
+ 
+Abstract
+This architecture document provides a description of the architecture style used in the customer training system for DM Home Entertainment. It provides a diagram that shows the overall structure and then details each individual component/subsystems. It also lists the resources that are being used or will be used throughout the development of the system, as well as a rationale as to why the system’s architecture is structured the way it is.
+
+ 
+Table of Contents
+Introduction	3
+List of Figures	3
+List of Tables	3
+Use Case Model	4
+Use Case Diagram	4
+Use Case 1: Support Page	4
+Use Case 2: Enter Password	5
+Use Case 3: Diagnostic Checklist	5
+Use Case 4: Display Videos	6
+Rationale for the Use Case Model	6
+Non Functional Requirements	7
+Configuration Management	8
+References	8
+
+List of Figures:
+1.	Strictly Layered Architecture Model
+List of Tables: 
+1.	N/A
+Introduction
+The purpose of this document is to provide the system Architecture of the customer training system for DM Home Entertainment, as well as the visual representation of the model which consists of 4 layers each that are divided into two or more subsystems for the DHME Customer Training System. A sequential model is provided with the Support, Authentication, Logistic and Video Layers with their subsystems. The system Architecture includes a Support Page, Password Module, Diagnostic checklist and Videos.
+Architectural Styles Used
+Architectural Style(s) Used:
+
+The architectural style used is the layered architecture. It focuses on the grouping of related functionality into distinct layers which are stacked vertically on top of each other. In each layer, the functionality is related by a common role or responsibility. Layering helps in supporting a strong separation of concerns.
+
+The layered architecture has four layers which is sub-divided into two or more subsystem or layers. The four layers of the architectural style are:
+
+1) Support Layer: This layer allows the DHME customer to send in help request and connects the support ticket system with the diagnostics system. This layer has been divided into two subsystems: Support Ticket System and Diagnostics Connector.
+
+2) Authentication Layer:This layer allows the user to log in with the single password established by DHME. The user can pass the authentication system and use the diagnostics system once logged in. The system will prevent users if they are not logged in. This layer has been divided into three subsystems: Generic Login Manager, Login System, and Authentication System.
+
+3) Diagnostics Layer: This layer will contain the checklist system with possible checklists and related data as well as diagnostic system that will ask user number of question to help them with diagnosis process.
+
+4) Video Layer: In this layer, the unlisted YouTube links are managed and are used as references for the diagnosis process.
+
+Architectural Model Used
+The model consists of 4 layers each divided into two or more subsystems.
+ 
+
+Descriptions of subsystems:
+Support:
+Support Ticket System – The support ticket system allows for a DMHE customer to send in a help request. It is a necessary feature in instances where the self-help system is not suitable for fixing a customer’s problems.
+Diagnostics Connector – This diagnostics connector is a subsystem which connects the support ticket system in with the diagnostics system, allowing for customers to go from the support ticket page to the diagnostics page and back.
+Authentication Layer:
+Generic Login Manager – The generic login manager is a subsystem of the authentication layer which allows for the single password to be used by all people attempting to use the diagnostics system to be changed as per DMHE’s needs.
+Login System – The login system is the subsystem which will allow for the user to log in with the credentials established by DMHE with the generic login manager. Once logged in, the user will be allowed to pass the authentication system and use the diagnostics system.
+Authentication System – This system prevents users that were not logged in from accessing the diagnostics system while allowing for logged in users to use the diagnostics system normally.
+Diagnostics Layer:
+Checklist System – This system will contain the entire set of possible checklists, their related data, and their associations. 
+Diagnostics System – This system will ask the user a series of question to carry them through the diagnosis process. Data for this process will be provided by the checklist system. 
+Video Layer:
+YouTube Link System– This system will manage all of the Youtube links and their associations to the Diagnostics layer and its respective subsystems.
+YouTube Video System – This system will allow for the management of the videos to be used as references in the diagnosis process. 
+Technology, Software, and Hardware Used
+The technology needed to implement this project includes an ide, cameras, YouTube, and the existing DMHE website.  The cameras will be used to record the necessary videos that will aid DM customers in troubleshooting.  The cameras will also be used to take pictures of the supported hardware to help customers identify their pieces of hardware.  The IDE will need to be able to create html webpages.  A tool such as eclipse with an html plug in can be used to create html based web pages, the page that will be created will use the existing framework of the DMHE website.  YouTube is being used to host the related videos.  The videos will be unlisted so no unauthorized person will be able to search for them. 
+
+This project uses the existing client server framework that is currently in place for the DMHE website but will slightly be modified to accept a login after connecting to the support portal.  Clients will connect to the DMHE website click on the support page, then input their credentials.  After users are authenticated they will have access to the diagnostic page and be able to view the support videos being streams through YouTube. 
+Evidence the Requirements Have Been Placed Under Configuration Management
+YouTube.
+References
+
+
+
+
