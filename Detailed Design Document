@@ -1,0 +1,125 @@
+
+
+
+
+
+
+
+Design
+Design and Build a Customer Training System – Part II
+Group 8
+David Orozco, Kesha Shrestha, Dustin Endres, Luis Segarra, Razia Saleen,
+SE 4485 Software Engineering Project
+3/18/16
+ 
+Abstract
+This document is the detailed design document for the DMHE customer training system. It contains a framework for the GUI that the customer will interact with. Included is a class diagram of the objects present in the system, as well as sequence diagrams that show how those objects will interact with during the two major scenarios of operation. Also included is a traceability matrix that shows that the requirements have been covered by an element of the system’s design. 
+ 
+Table of Contents
+List of Figures	3
+List of Tables	4
+Introduction	4
+GUI	5
+Figure 1: Current DMHE Support Page	5
+Figure 2: Updated Version of the Support Page	6
+Figure 3: Self Service Login Page Example	7
+Figure 4: Self Service Page 1 Example	8
+Figure 5: Self Service Page 2 Example 	9
+Figure 6: Self Service Page 3 Example 	10
+Static Model	11
+Dynamic  Model 	12
+Figure 8: Normal Use Sequence Diagram	12
+Figure 9: Support Ticket Sequence Diagram	13
+Traceability	14
+Configuration Management	14
+References	14
+
+List of Figures:
+Figure 1: Current DMHE support page
+Figure 2: Updated Version of the Support Page
+Figure 3: Self Service Login Page Example
+Figure 4: Self Service Page 1 Example
+Figure 5: Self Service Page 2 Example
+Figure 6: Self Service Page 3 Example 
+Figure 7: Class Diagram 
+Figure 8: Normal Use Sequence Diagram 
+Figure 9: Support Ticket Sequence Diagram 
+List of Tables: 
+1.	Traceability Matrix
+Introduction
+This is the detailed design document for the DMHE customer training system. The purpose of this document is to detail the exact mechanisms by which the system will satisfy the requirements by detailing what objects are in the system, what methods they have, and how they interact with each other, while at the same time providing a framework for the GUI that the customer will experience when interacting with the system.
+ 
+GUI
+Figure 1: Current DMHE support page
+
+ 
+ 
+Figure 2: Updated Version of the Support Page
+ 
+The updated version of the website will put a button on the existing support page linking to the self-service page. The about us entry on the grey menu will also be replaced with a Self Service button linking to the self-service page.
+
+
+
+
+
+
+Figure 3: Self Service Login Page Example
+
+ 
+The user will need to log in with the generic customer username and password before they can proceed to use the self service system.
+
+
+
+
+
+
+
+Figure 4: Self Service Page 1 Example
+ 
+The user will select from an available list of root problems to begin troubleshooting.
+
+
+
+Figure 5: Self Service Page 2 Example
+ 
+The user will select follow-up information that allows for further specification of the exact problem.
+
+
+
+
+
+
+Figure 6: Self Service Page 3 Example
+ 
+The user will be presented with a solution based upon the information they entered previously. It will include a video of solving the problem as well as a step by step guide on how to do it, with relevant pictures as necessary.
+
+
+
+
+Static Model
+ 
+Figure 7: Class Diagram
+The system will consist of 4 classes
+1.	Support Page
+2.	Password Module
+3.	Diagnostics
+4.	Videos
+ 
+Dynamic Model
+ 
+Figure 8: Normal Use Sequence Diagram
+The above figure is the sequence diagram of events in the customer training system should the customer elect to actually diagnose the root cause of the problem themselves instead of simply submitting a support ticket and having the DMHE send a technician out to fix it.
+The customer would first open the support page in the web browser, and enter their password (which will be provided to them by the DMHE separately). Once the password is verified as correct, they will be redirected to the diagnostics page, where the customer will be presented with a series of questions that they must answer. The responses are collected and they are used to determine which is the appropriate video that must be played. The YouTube video link is retrieved and the video is then played for the customer as video embedded on the support page
+ 
+Figure 9: Support Ticket
+The above figure is the sequence diagram of events in the customer training system should the customer elect to simply submit a support ticket for their problem. Once the customer opens the page and their password is verified, the customer will fill out the support ticket, and it will be submitted to the DMHE so that they can send a technician to fix the problem.
+
+Rationale For Your Detailed Design Model
+This design was built directly off of the system layers (Support Page, Password, Diagnostic, and Videos) present in the Architecture document. Every object in the system is an implementation of one of those layers, and their interactions 
+ 
+Traceability
+ 
+Evidence the Requirements Have Been Placed Under Configuration Management
+https://github.com/dmo140230/Software-Engineering-Project-Group-8/blob/master/Requirements.txt
+References
+N/A
