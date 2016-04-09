@@ -1,0 +1,208 @@
+
+
+
+TESTING PLAN
+
+Design and Build a Training System – Part II
+
+Group 8
+
+Razia Saleem, Kesha Shrestha, Dustin Endres, Luis Segarra, David Orozco
+
+SE 4485 Software Engineering Project
+
+04/08/2016
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ABSTRACT
+
+This document lists the Testing Plan used to validate the features used in the DMHE software developed to provide solutions to customer to troubleshoot issues in their devices. The traceability of each Test case is matched with it’s corresponding Use Case.
+
+Documents also provides traceability of Test Cases to Use cases using the traceability matrix. Techniques for test generation are also listed along with the evidence of the test cases.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Table of Contents
+INTRODUCTION	
+REQUIREMENTS/SPECIFICATIONS-BASED SYSTEM LEVEL TEST CASES	
+TEST CASES for USE CASE1	
+TEST CASES for USE CASE1	
+TEST CASES for USE CASE1	
+TRACEABILITY OF TEST CASES TO USE CASES	
+TECHNIQUES FOR TEST GENERATION	
+EVIDENCE THE TEST CASES, DOCUMENT HAVE BEEN PLACED UNDER CONFIGURATION MANAGEMENT REFERENCES	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+INTRODUCTION 
+
+The purpose of this document is to describe the testing plan using the requirements/specifications-based system level testing. Use case “Support page”, “FAQs” and “Display Video” are tested using different Test Cases. 
+
+Once Tested, Traceability of Test Cases to Use Cases is done using the traceability matrix which covers each test case with it’s corresponding use case. Techniques for test generation specify which techniques are used for test generation. For example, black box-based testing versus white-box based testing. The criteria used for measuring the quality of each test is also listed. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REQUIREMENTS/SPECIFICATIONS-BASED SYSTEM LEVEL TEST CASES 
+
+TEST CASES for USE CASE1
+
+UC1 Support Page
+1.1 Preconditions:
+The customer must be aware of the support page and the customer must also have a valid login for the support page.
+
+1.2 Main Flow:
+The customer opens the DMHE main page, navigates to the support section and logs in with valid credentials.
+1.3 Subflows:
+The customer opens their web browser and enters the DMHE web address in the address bars.
+Once on the page the customer locates the support link on the home page and is redirected.
+After loading the support page the customer inputs their credentials into the correct fields on the page and logs in.
+1.4 Alternative Flows:
+The customer opens the DMHE main page, navigates to the support section and is denied access to the support page due to invalid credentials.
+
+TEST DATA:
+2 user accounts created to be used in testing:
+- Razia Saleem12345
+- Mike Tyson54321
+
+TEST CASES:
+1. Valid login/valid password Razia/Saleem2345 logged in
+2. Valid login/invalid password Razia/Saleen12345 error: provide valid combination
+3. Invalid login/valid password Mike/SAleem12345 error: provide valid combination
+4. Masking password type 1234567 shown in bullets
+5. "Copy" menu item on Password NA disabled
+6."Cut" menu item on Password NA disabled
+
+TEST CASES for USE CASE2
+
+
+UC2 FAQ Use Case
+2.1 Preconditions:
+The customer has logged in to the website and the customer is able to view the Website 
+2.2 Main Flow:
+The customer reads the FAQs and identifies the issues with device
+2.3 Subflows:
+As the customer goes through the FAQs, the device can be tested for each individual questions to see where the issue occurs.
+324 Alternative Flows:
+The customer may choose to jump directly to the the solution for their problem, instead of going through the FAQs , if they are more likely to know about the router and the system. They may also choose the option for more help if they issue is still not resolved.
+
+TEST CASES
+
+Display 
+Direct to a Video solution if applicable
+
+
+TEST CASES for USE CASE3
+
+
+UC3 Display video Use Case
+
+3.1 Preconditions: 
+The customer have logged in to the website and the customer has discovered the problem through the use of the diagnostic checklist
+
+3.2 Main Flow: 
+The customer follows the steps displayed in the video along with the textual instructions that accompany it in order to solve their problem. They may repeat the video if they missed some steps in solving their problem if needed.
+
+3.3 Subflows: 
+The customer might have to pause and resume the video in between in finding buttons to restart or following other instruction for their issue.
+
+3.4 Alternative Flows: 
+The customer may choose to use the checklist for the solution for their problem, instead of watching the video, if they are more likely to know about the router and the system. They may also choose the option for more help if they issue is still not resolved.
+
+TEST CASES
+Buffering 
+the max possible length of the video file that can be played 
+the video that is uploaded should be playable on the site
+the different video file format that can be uploaded and played
+the pause-stop-play-replay functionality
+
+
+
+TRACEABILITY OF TEST CASES TO USE CASES 
+
+
+
+
+TECHNIQUES FOR TEST GENERATION 
+
+The techniques that were used for the test generation are:
+Functionality Testing
+This type of testing includes checking all the links in website to see if they link the user to the right page, as well as check for the presence of are any orphan pages or any broken links.  There could be test for the validation on each field of the form of the website. Cookies testing is done for maintaining sessions mainly login session. Application is also tested by enabling or disabling the cookies in the browser options. Cookies are also tested to check if it is encrypted before writing to user machine. And, also since data consistency is also very important it is very necessary to check for data integrity.
+
+
+
+2) Security Testing
+Among the different testing technique security is also one of the important testing techniques. Mostly importantly the internal pages should not open just by pasting internal url directly into the browser address bar without login. Invalid inputs is tried in input field like login username and password and check how the system reacts on all invalid inputs.
+
+ EVIDENCE THE TEST CASES, DOCUMENT HAVE BEEN PLACED UNDER CONFIGURATION MANAGEMENT REFERENCES 
+
