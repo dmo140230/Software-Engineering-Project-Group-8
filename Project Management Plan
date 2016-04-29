@@ -1,0 +1,132 @@
+
+
+
+
+
+
+
+Project Management Plan
+Design and Build a Customer Training System – Part II
+Group 8
+David Orozco, Kesha Shrestha, Dustin Endres, Luis Segarra, Razia Saleen,
+SE 4485 Software Engineering Project
+1/29/16
+ 
+Abstract
+This project management plan details a brief overview of the product our team will be building, and the way the team itself will be organized. 
+
+It explains the lifecycle model being used in this project, list the possible risks we will face, as well as describe all the necessary hardware and software resources that the team will be using throughout. 
+
+This plan includes a list of the deliverables required, and their due dates, to make clear to the entire team when tasks must be completed. 
+
+This plan also has a list of all monitoring mechanisms to be used during the project to ensure version control, and a description of the professional standards that the team will adhere by throughout the project. 
+
+ 
+Table of Contents
+Introduction	4
+Project Organization	5
+Life Cycle Model	5
+Spiral Model Diagram	6
+Risks	6
+Software and Hardware Requirements	7
+Hardware	7
+Software	7
+Specific Tools	8
+Monitoring	8
+Deliverables and Schedule	9
+Activities	9
+Professional Standards	10
+References	11
+
+List of Figures:
+	Figure 1: Spiral model
+ 
+Introduction
+The purpose of this document is to describe the processes, hardware and software requirements, personnel, risks, and monitoring mechanisms that will be involved in the development of the listed deliverables throughout the whole project. This plan also provides the deadlines for each deliverable, and lists the professional standards the entire team will abide by while working.
+
+The goal of the project is to develop a system that will guide customers to solutions for the most common issues they face with the home entertainment system built and maintained by DM Home Entertainment, and then present it to their employees in such a way that they can continue using the system once the project development has concluded.
+
+This plan will first introduce the team members and their roles, describe the life cycle model used in development, describe the possible risks in the project, and any hardware and software that will be used. After that, the plan will list the deliverables and their due dates, and any monitoring mechanisms that will be used on those deliverables. Finally, we will describe our team’s professional standards.
+ 
+Project Organization
+	The team is organized in such a way that each team member will do their share of the work at each part of the life cycle, however, some members are better at certain critical sections, so they will hold more responsibility during that part of development. 
+-	David Orozco: Team leader, experience with customers
+-	Dustin Endres: skilled at developing software architecture 
+-	Luis Segarra: Has work experience developing troubleshooting applications
+-	Razia Saleen: Has work experience with databases
+-	Kesha Shrestha: knowledge of different programming languages
+Because of their individual skills, each member will be given responsibilities at each phase of development based on what is deemed appropriate so that the team member who is more knowledgeable in a certain section contributes more to ensure a higher quality deliverable. 
+Life Cycle Model
+In this project, the team will be using the spiral methodology to develop the application. The spiral methodology is one that iterates over four main steps of development which are:  Requirements elicitation, analysis and negotiation, testing, and validation. The spiral model works better than other iterative methodologies because the spiral model analyses alternative approaches based on risk, which works well for this project given that for this project we have many different possible ways of implementing the solution.
+ 
+ 
+Figure 1: The Spiral Model
+Risks
+The following is the list of concerns given to us by the DMHE sponsors:
+•	Can the teams learn the businesses processes  fast enough?
+•	Will DHME employees have time to be interviewed?
+•	Can customer training teams work together to determine a solution?
+•	Can we train and our project the the DMHE staff?
+ 
+Software and Hardware Requirements
+
+Hardware
+
+DMHE Devices (Router + Network Switch + Lights)
+Since this project involves developing tutorials for troubleshooting issues with these devices, they will be needed in order to understand their process flow and the possible solutions.
+
+Software
+Control4: Home Automation and Smart Home Systems
+This is the platform to which the customer training system is targeted, and as a result, the team will have to become very familiar with this software
+Version Control
+-	We used GitHub as our main version control platform.
+
+Communication Tool
+-	GroupMe: Communication is important when involved in a team project, especially when you’re working with another group. GroupeMe provides an easy and versatile way to communicate with team members to facilitate easier development.
+
+Documentation Tool
+-	STAR UML was used multiple times to create various types of diagrams including class and sequence diagrams.
+Audio Editing Tool
+-	Audacity is free and is incredibly powerful yet easy to use, to it was the tool of choice when editing audio for the customer support videos.
+Video Editing Tool
+-	Windows Movie Maker has all the necessary capabilities needed for simple video editing, and it was suitable for our purposes in this project, and we chose to use this tool over more expensive alternatives.
+
+Monitoring, Reporting, and Controlling Mechanisms
+	Our group will be having weekly meetings with the corporate sponsor and/or employees of DMHE in order to better understand the company and their needs. Meeting minutes will be taken detailing when and where the meeting was, the meeting agenda.
+	Early meetings will focus on understanding the process flows of the tasks we are attempting to troubleshoot as well as exact requirements for the end solution. Later meetings will involve updating the company on our progress and refining our solution in ways to best integrate with their existing technical infrastructure.
+ 
+Deliverables and Schedule
+The deliverables and their due dates are as follows:
+Project Management Plan				(Due: 01/29/2016, Friday)
+Requirements Documentation			(Due: 02/12/2016, Friday)
+Architecture Documentation			(Due: 02/26/2016, Friday)
+Detailed Design Documentation		(Due: 03/18/2016, Friday)
+Testing Plan						(Due: 04/08/2016, Friday)
+Final Project Report					(Due: 04/29/2016, Friday)
+Final Project Demonstration			(Due: 04/29/2016, Friday)
+
+Activities
+The project management plan will guide the development of the project by stating the process to be used, the team members and their skills, and the goal of the project, and provide deadlines.
+The Requirements will allow the team to accurately determine what exactly the sponsor wishes the team to develop. The requirements documentation will specify both functional and non-functional requirements.
+The Architecture will determine the structure of the program so that it can deliver the desired quality attributes specified in the requirements documentation.
+The Detailed Design documentation will describe exactly how the project that was being developed was implemented.
+The Testing plan will explain how the project was tested against the requirements once a prototype has been built.
+The final report and demonstration will take place during the final day of class and will feature our finished product.
+The dependencies are as follows:
+Requirements→Architecture→Design→Testing→Report/Demo
+Which means that the most heavily depended upon deliverable are the requirements, so more focus will be spent on refining these, even past the time a deliverable is due.
+Professional Standards
+Team 8 will abide by the general guidelines provided.
+Team members shall attend every team meetings.  Team members can join through whichever means possible ( in person, video conference, voice conference, etc).  Meetings shall be held on Fridays during normal class hours.
+Tasks assigned to team members shall be submitted to the team leader before their respective due dates.  Submitting to the team leader before the due date is important so the deliverable can be compiled.
+On the first occurrence of unacceptable behavior, determine the circumstances involved, resolve the problem, and document the event in the meeting minutes.
+On a second occurrence, notify the instructor of the problem. A meeting will be set up to evaluate the situation and resolve the problem.
+On a third occurrence, again notify the instructor of the problem. A meeting will be set up to
+evaluate the situation and resolve the problem. At this point, the team will have the *option* of
+removing the team member. If removed, then the team member receives a pro-rated grade based on the number of weeks they have participated in the group.
+Examples of unacceptable behavior may include not delivering on time, delivering poor quality work, missing team meetings, being unprepared for team meetings, disrespectful or rude behavior, etc. Reasons such as "too busy" or "I forgot", or "my dog ate my design model" are unacceptable. 
+Valid reasons that must be considered include those listed for obtaining an incomplete standing in a course (illness, death in the family, travel for business or academic reasons, etc.)
+References
+G. Kotonya and I. Sommerville, Requirements engineering: 
+processes and techniques. Chichester: J. Wiley, 1998. pg 95
+
